@@ -1,0 +1,30 @@
+{
+  "name": "graphql-blog-api",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev",
+    "prisma:studio": "prisma studio"
+  },
+  "dependencies": {
+    "@apollo/server": "^5.5.1",
+    "@prisma/client": "^7.8.0",
+    "bcryptjs": "^3.0.3",
+    "dataloader": "^2.2.3",
+    "dotenv": "^17.2.1",
+    "graphql": "^16.14.0",
+    "jsonwebtoken": "^9.0.3"
+  },
+  "devDependencies": {
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^25.9.1",
+    "prisma": "^7.8.0",
+    "tsx": "^4.19.4",
+    "typescript": "^6.0.3"
+  }
+}
